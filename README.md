@@ -63,7 +63,7 @@ sample_data_bad <-sample_data_verified_purchase[sample_data_verified_purchase$
                                                   sample_data_verified_purchase$review_rating
                                                 == "2.0 out of 5 stars",]
 
-# Good
+# Splitting the data
 good_dtm <- cleaning(sample_data_good$review_text)
 good_freqterm <- findFreqTerms(good_dtm,50)
 good_dtm <- good_dtm[,dood_freqterm]
